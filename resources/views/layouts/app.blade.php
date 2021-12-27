@@ -12,11 +12,9 @@
         {{-- ナビゲーションバー --}}
         @include('commons.navbar')
 
-        <div class="container">
-            @yield('content')
-        </div>
-
         <!-- JavaScriptの指定は省略 -->
+        {{-- エラーメッセージ --}}
+        @include('commons.error_messages')
 
         <div class="container">
             @yield('content')
